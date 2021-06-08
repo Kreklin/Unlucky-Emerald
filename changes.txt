@@ -1,0 +1,60 @@
+Your party				Opponents party			Status		Code location
+	BATTLE MECHANICS
+Never crit				Always crit 				[DONE]		battle_script_commands.c
+Always min damage roll			Always max roll			[testing]	battle_script_commands.c
+Lose speed ties			Win speed ties				[DONE]		battle_main.c
+Multi hit moves hit 2 times		Multi hit moves hit 5 times		[DONE]		battle_script_commands.c
+Accuracy<100% moves never hit		Accuracy>0% moves always hit		[DONE]		battle_script_commands.c
+Secondary effects never proc		Secondary effects always proc		[DONE]		battle_script_commands.c
+One hit KOs fail unless 70 level diff	One hit KOs succeed if 		[DONE]		battle_script_commands.c
+Disobedient always hits self							[to do]	battle_util.c
+
+	STATUS EFFECTS
+5 turn sleep				1 turn sleep				[DONE]		battle_script_commands.c and battle_util.c (yawn)
+5 turn confusion			2 turn confusion			[DONE]		battle_script_commands.c
+Always hit self in confusion		Never hit self in confusion		[DONE]		battle_util.c
+Always full para			Never full para			[DONE]		battle_util.c
+Never unfreeze				Always unfreeze			[DONE]		battle_util.c and battle_util2.c?
+5 turn disable				2 turn disable				[testing]	battle_script_commands.c
+6 turn encore				2 turn encore				[testing]	battle_script_commands.c
+Always immobilied by love		Never immobiled by love		[DONE]		battle_util.c
+
+	ABILITIES
+Pickup never activates								[testing]	battle_script_commands.c
+Shed skin never activates		Shed skin always activates		[DONE]		battle_util.c
+Player always proc effect spore	Opponent never proc effect spore	[DONE]		battle_util.c
+Player always proc poison point	Opponent never proc poison point	[DONE]		battle_util.c
+Player always proc static		Opponent never proc static		[DONE]		battle_util.c
+Player always proc flame body		Opponent never proc flame body	[DONE]		battle_util.c
+Player always proc cute charm		Opponent never proc cute charm	[testing]	battle_util.c
+
+	MOVES
+Wrap/Bind on player lasts 6 turns	Wrap/Bind on opponent lasts 3 turns	[testing]	battle_script_commands.c
+Uproar locks for 5 turns		Uproar locks for 2 turns		[testing]	battle_script_commands.c
+Player thrash/outrage for 2 turns	Opponent thrash/outrage for 3 turns	[testing]	battle_script_commands.c
+Player psywave min damage		Opponent psywave max damage		[testing]	battle_script_commands.c
+Metronome uses splash for player	Metronome no change for opponent	[testing]	battle_script_commands.c
+Player spite reduces min PP		Opponent spite reduces max PP		[testing]	battle_script_commands.c
+Player always magnitude 4		Opponent always magnitude 10		[DONE]		battle_script_commands.c
+Present alway heals opponent		Present always max damage to player	[testing]	battle_script_commands.c
+Protect/detect always fails		Protect/detect always succeeds	[testing]	battle_script_commands.c
+Endure always fails			Endure always succeeds			[testing]	battle_script_commands.c
+
+	ITEMS
+Focus band never procs			Focus band always procs		[testing]	battle_script_commands.c
+Kings rock never procs			Kings rock always procs		[testing]	battle_util.c
+
+
+	OTHER
+Trainer id is always 13							[DONE]		new_game.c
+Non-trainer pokemon always have 0 IVs						[DONE]		pokemon.c
+Wild pokemon never hold items unless there is a 100% chance			[testing]	pokemon.c
+Pokeballs fail unless there is a 100% chance of success			[DONE]		battle_script_commands.c
+Player never wins lottery							[testing]	lottery_corner.c
+Never get pokerus or spread pokerus						[testing]	pokemon.c
+Always get min number of berries from plants					[testing]	berry.c
+Friendship doesn't increase from walking					[testing]	pokemon.c
+Daycare never produces eggs							[testing]	daycare.c
+Roulette
+Slot machine
+Mirage tower never appears unless forced					[testing]	mirage_tower.c
